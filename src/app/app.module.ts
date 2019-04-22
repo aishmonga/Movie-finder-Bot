@@ -5,10 +5,17 @@ import { HttpClientModule } from "@angular/common/http";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { MovieRecastComponent } from "./movie-recast/movie-recast.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [AppComponent, MovieRecastComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    CommonModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

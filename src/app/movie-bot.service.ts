@@ -20,7 +20,7 @@ export class MovieBotService {
       "https://api.recast.ai/build/v1/dialog",
       {
         message: { type: "text", content: question },
-        conversation_id: "597375b5-e4e4-465c-95f7-1f566d9f3ead" // CONVO
+        conversation_id: "597375b5-e4e4-465c-95f7-1f566d9f3ead"
       },
       this.httpOptions
     );
