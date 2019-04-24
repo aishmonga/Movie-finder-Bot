@@ -6,9 +6,10 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { MovieRecastComponent } from "./movie-recast/movie-recast.component";
 import { CommonModule } from "@angular/common";
+import { DialogComponent } from './dialog/dialog.component';
 
 @NgModule({
-  declarations: [AppComponent, MovieRecastComponent],
+  declarations: [AppComponent, MovieRecastComponent, DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

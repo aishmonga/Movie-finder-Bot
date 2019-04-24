@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
 import { MovieBotService } from "../movie-bot.service";
-// import { getNativeByTNode } from "@angular/core/src/render3/util";
-// import { BuiltinVar, analyzeAndValidateNgModules } from "@angular/compiler";
 
 @Component({
   selector: "app-recast",
@@ -14,7 +12,11 @@ export class MovieRecastComponent {
   responseArr: any = [];
   check = false;
   source = false;
+  count = 1;
+
   askQuestion() {
+    console.log(this.count, "jkjjhkjh");
+    this.count++;
     this.recast.interactWithRecast(this.question).subscribe(data => {
       console.log(data);
       console.log("normal query resp: ", this.responseArr.push(data));
